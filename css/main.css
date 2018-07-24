@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+#header {
+    height: 100vh; /* at every point in this page the height of this element is 95% of the viewport*/ /* linear-gradient adds a gradient in the direction you choose with the colors you choose*/
+	background-image: linear-gradient( rgb(0, 0, 0,0.5),rgb(0, 0, 0,0.1)),
+    url("../img/SiyabongaAfrica_cover.jpg"); /* you can stack images on top of each other by seperating with a comma*/
+	background-size: cover;
+	background-position: top; /*background-position anchors the part of the image selected i.e. bottom, top, center so that whenever the viewport changes that point stays the same */
+
+	position: relative;
+}
+
+#navigation {
+    background-color: black;
+    width: 100%;
+    z-index: 1;
+    padding: 0.5rem;
+}
+
+img.logo {
+    width: 5%;
+}
+
+nav {
+    float: right;
+}
+
+nav span {
+    color: white;
+}
+
