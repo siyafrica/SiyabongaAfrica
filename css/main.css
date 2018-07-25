@@ -42,9 +42,10 @@ nav {
     transform: translate(0,100%);
 }
 
-nav span {
+nav span a {
     color: white;
     margin-right: 10px;
+    text-decoration: none;
 }
 
 div.cover {
