@@ -20,22 +20,42 @@
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 
-
-    <script src="js/main.js"></script>
+    <!-- jQuery CDN -->
+    <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- The overlay -->
+    <div id="mobile-nav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <!-- Overlay content -->
+            <div class="overlay-content">
+            <a href="#header">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#footer">Contact</a>
+            </div>
+        
+        </div>
+        
     <!-- The header section for the site including the navigation and cover image -->
     <div id="header">
         <div id="navigation">
                 
             <img src="img/SiyabongaAfrica-logo.png" class="logo">
 
-            <nav>
+            <nav class="desktop-nav">
                 <span><a href="#header">Home</a></span>
                 <span><a href="#about">About</a></span>
                 <span><a href="#education">Education</a></span>
                 <span><a href="#footer">Contact</a></span>
             </nav>
+
+                
+                <!-- Use any element to open/show the overlay navigation menu -->
+                <span class="mobile-nav-btn" onclick="openNav()">&#9776;</span>
         </div>
 
 
@@ -128,5 +148,6 @@
         </div>
     </footer>
     
+    <script src="js/main.js"></script>
 </body>
 </html>
