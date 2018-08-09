@@ -1,12 +1,11 @@
 //Code for overlay 
 /* Open */
 function openNav() {
-    document.getElementById("mobile-nav").style.height = "100%";
+    document.getElementById("myNav").style.width = "100%";
 }
 
-/* Close */
 function closeNav() {
-    document.getElementById("mobile-nav").style.height = "0%";
+    document.getElementById("myNav").style.width = "0%";
 }
 
 //Code for smooth transitions when navigation is clicked
