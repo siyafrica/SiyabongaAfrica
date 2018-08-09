@@ -15,7 +15,7 @@ html {
 
 /* header section */
 #header {
-    height: 100vh; /* at every point in this page the height of this element is 95% of the viewport*/ /* linear-gradient adds a gradient in the direction you choose with the colors you choose*/
+    height: 100vh; /* at every point in this page the height of this element is 100% of the viewport*/ /* linear-gradient adds a gradient in the direction you choose with the colors you choose*/
     background-image: url("../img/SiyabongaAfrica_cover.jpg"); /* you can stack images on top of each other by seperating with a comma*/
     box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
 	background-size: cover;
@@ -33,6 +33,7 @@ html {
         width: 100%;
         height: 80px;
         z-index: 1;
+        position: fixed;
     }
 
     img.logo {
@@ -52,6 +53,10 @@ html {
         text-decoration: none;
     }
 
+    nav.desktop-nav span a:hover {
+        text-decoration: underline;
+    }
+
     #mobile-nav {
         display: none;
     }
@@ -59,8 +64,9 @@ html {
     /* end Navigation section */
 
     /* Cover section */
-    div.cover {
-
+    div#cover {
+        width: 100%;
+        height: ;
     }
 
     div.cover-text {
@@ -68,6 +74,7 @@ html {
         margin: 0 auto;
         transform: translate(0,400%); 
 
+        text-align: center;
         color: antiquewhite;
     }
 
@@ -122,6 +129,12 @@ div.education-card {
     justify-content: space-between;
     
     text-align: center;
+    color: maroon;
+}
+
+a span {
+    color: maroon;
+    text-decoration: none;
 }
 
 div.education-card:hover {
@@ -177,7 +190,7 @@ div.social-links a {
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
-
+    /* ---------------------------- header section ------------------------------- */
     /* Navigation */
     nav.desktop-nav {
         display: none;
@@ -247,6 +260,38 @@ div.social-links a {
 
         
     /* end Navigation */
+
+    /* --------- cover ----------- */
+    div.cover-text {
+        width: 66%;
+        margin: 0 auto;
+        transform: translate(0,600%); 
+
+        text-align: center;        
+        color: antiquewhite;
+    }
+    /* ---------------------------- end header section ------------------------------- */
+
+    /* ---------------------------- About section ------------------------------- */
+    div.about-text h1 {
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    
+    div.about-text {
+        width: 80%;
+        margin: 0 auto;
+    }
+    /* ---------------------------- end About section ------------------------------- */
+
+    /* ---------------------------- Education section ------------------------------- */
+    
+    /* ---------------------------- end Education section ------------------------------- */
+
+    /* ---------------------------- Footer section ------------------------------- */
+    
+    /* ---------------------------- end Footer section ------------------------------- */
 }
 
 /* ------------------------------------- Phones ------------------------------------- */
@@ -256,6 +301,7 @@ div.social-links a {
   and (max-device-width: 480px) 
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    /* ---------------------------- header section ------------------------------- */
     /* Navigation */
     nav.desktop-nav {
         display: none;
@@ -334,4 +380,71 @@ div.social-links a {
     }
     /* end Navigation */
 
+    /* -------- cover ---------- */
+    div.cover-text {
+        width: 66%;
+        margin: 0 auto;
+        transform: translate(0,200%); 
+
+        text-align: center;
+        color: antiquewhite;
+    }
+
+    /* ---------------------------- end header section ------------------------------- */
+
+    /* ---------------------------- About section ------------------------------- */
+    div.about-text h1 {
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    
+    div.about-text {
+        width: 80%;
+        margin: 0 auto;
+    }
+    /* ---------------------------- end About section ------------------------------- */
+
+    /* ---------------------------- Education section ------------------------------- */
+    /* On the flex container */
+    .education-cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* You can set flex-wrap and
+        flex-direction individually */
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* Or do it all in one line
+        with flex flow */
+        flex-flow: row wrap;
+        /* tweak where items line
+        up on the row
+        valid values are: flex-start,
+        flex-end, space-between,
+        space-around, stretch */
+        align-content: flex-end;
+
+    }
+
+    div.education-card {
+        width: 50%;
+        height: 30%;
+    }
+    
+    div.education-card h2 {
+        font-size: 1.25rem;
+    }
+
+    div.education-card a {
+        font-size: 0.75rem;
+    }
+    img.university-img {
+        display: none;
+    }
+    /* ---------------------------- end Education section ------------------------------- */
+
+    /* ---------------------------- Footer section ------------------------------- */
+    
+    /* ---------------------------- end Footer section ------------------------------- */
 }
